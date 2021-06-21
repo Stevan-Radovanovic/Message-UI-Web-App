@@ -165,7 +165,7 @@
 
         img {
             width: 15%;
-            padding-top: 10px;
+            padding-top: 30px;
             padding-bottom: 10px;
         }
     }
@@ -197,4 +197,18 @@
 .wrap {
     height: 100vh;
     overflow: hidden;
+}
+
+i {
+    border-radius: 50%;
+    padding: 6px;
+    margin: 2px;
+    color: lightgray;
+    border: 1px solid lightgray;
+
+    &:hover {
+        color: #313131;
+        background-color: lightgray;
+        border: 1px solid #313131;
+    }
 }
