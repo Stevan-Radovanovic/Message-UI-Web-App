@@ -1,0 +1,200 @@
+.header {
+    height: 5%;
+    background-color: #0080C1;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 40%;
+        margin-left: 10px;
+    }
+}
+
+.main {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .messages {
+        width: 50%;
+        display: flex;
+        height: 80%;
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+
+        .left-column {
+            width: 30%;
+            background-color: white;
+
+            .user {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid silver;
+                cursor: pointer;
+
+                img {
+                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .status {
+                    color: rgb(160, 152, 152);
+                    font-style: italic;
+                    font-size: small;
+                    margin-top: -10px;
+                }
+
+                &:hover {
+                    background-color: lightgray;
+                }
+            }
+        }
+
+        .right-column {
+            width: 70%;
+            background-image: url('../assets/images/back.png');
+            background-size: contain;
+            overflow-y: hidden;
+            color: white;
+
+            .all-messages-wrap {
+                overflow-y: auto;
+                padding-top: 40px;
+                box-sizing: border-box;
+            }
+
+            .message-wrap {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .message-one {
+                background-color: #2ba9e8;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 10px 80px;
+
+                .text {
+                    margin: 0;
+                }
+
+                .time {
+                    font-size: smaller;
+                    color: lightgray;
+                    margin: 0;
+                }
+            }
+
+            .sent-wrap {
+                justify-content: flex-end;
+            }
+
+            .sent {
+                background-color: #0080C1;
+            }
+
+            &.centered {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    color: white;
+                    background-color: #0080C1;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+            }
+
+            .message-input {
+                background-color: #0080C1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+
+                input {
+                    height: 28px;
+                    border: 4px;
+                    margin-left: 10px;
+                    border-radius: 3px;
+                    outline: none;
+                }
+
+                button {
+                    background-color: white;
+                    color:#0080C1;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    margin-left: 5px;
+                    height: 28px;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+    } 
+}
+
+.footer {
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+    padding-top: 10px;
+    box-sizing: content-box;
+
+    .logo {
+        border-bottom: 1px solid white;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 15%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .links {
+        width: 85%;
+        display: flex;
+        margin-top: 10px;
+
+        .column {
+            width: 33%;
+
+            p {
+                cursor: pointer;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 5px;;
+    }
+}
+
+.wrap {
+    height: 100vh;
+    overflow: hidden;
+}
